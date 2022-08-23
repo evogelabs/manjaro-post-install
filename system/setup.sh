@@ -3,6 +3,9 @@
 # Enable sudo without password
 echo "sysadm ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/auto
 
+# Deve-se criar esses arquivos para que o docker desktop funcione
+sudo touch /etc/subuid /etc/subgid
+
 # --------------------------------------------------------------------------------------------------
 echo "Enable pacman colours..."
 sudo sed -i".old" "s/#Color/Color/g" /etc/pacman.conf
@@ -18,6 +21,9 @@ sudo pacman --verbose -Syu --noconfirm --needed
 
 ### Install yay for AUR packages
 sudo pacman --verbose -S --noconfirm --needed yay
+
+### Install flatpak
+sudo pacman --verbose -S --noconfirm flatpak libpamac-flatpak-plugin
 
 ### Openssh
 sudo pacman  -Syyuu --verbose --noconfirm --needed \
