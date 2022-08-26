@@ -34,3 +34,9 @@ sudo echo "AllowSuspend=no" >> /etc/systemd/sleep.conf
 sudo echo "AllowHibernation=no" >> /etc/systemd/sleep.conf
 sudo echo "AllowSuspendThenHibernate=no" >> /etc/systemd/sleep.conf
 sudo echo "AllowHybridSleep=no" >> /etc/systemd/sleep.conf
+
+# Hd backup
+sudo mkdir /data
+sudo echo "/dev/sdb1                                 /data          ext4    defaults,noatime 0 1" >> /etc/fstab
+sudo mount /data
+sudo systemctl daemon-reload
