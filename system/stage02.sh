@@ -28,3 +28,9 @@ echo "vm.swappiness=1" | sudo tee /etc/sysctl.d/100-swappiness.conf
 echo "net.ipv6.conf.all.disable_ipv6=1" | sudo tee /etc/sysctl.d/40-ipv6.conf
 echo "net.ipv6.conf.default.disable_ipv6=1" | sudo tee -a /etc/sysctl.d/40-ipv6.conf
 echo "net.ipv6.conf.lo.disable_ipv6=1" | sudo tee -a /etc/sysctl.d/40-ipv6.conf
+
+# Disable sleep
+sudo echo "AllowSuspend=no" >> /etc/systemd/sleep.conf
+sudo echo "AllowHibernation=no" >> /etc/systemd/sleep.conf
+sudo echo "AllowSuspendThenHibernate=no" >> /etc/systemd/sleep.conf
+sudo echo "AllowHybridSleep=no" >> /etc/systemd/sleep.conf
