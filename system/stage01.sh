@@ -58,4 +58,5 @@ sudo pacman  -Syyuu --quiet --noconfirm --needed \
     ripgrep \
     optipng \
     jpegoptim \
-    ffmpeg
+    ffmpeg \
+    linux515-headers

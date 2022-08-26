@@ -1,8 +1,6 @@
 #!/bin/bash
 
 ### Yay
-# vmware-workstation \
-# vmware-unlocker-bin \
 yay -Sua --noconfirm \
     google-chrome \
     brave-bin \
@@ -12,7 +10,11 @@ yay -Sua --noconfirm \
     microsoft-edge-stable-bin \
     anydesk-bin \
     rustdesk-bin \
-    google-cloud-sdk \
     postman-bin \
     stacer-bin \
-    jetbrains-toolbox
+    smartgit \
+    jetbrains-toolbox \
+    tilix-themes-git \
+    jaspersoftstudio \
+    vmware-workstation \
+    vmware-unlocker-bin

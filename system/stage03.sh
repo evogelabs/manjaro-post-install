@@ -39,7 +39,13 @@ sudo pacman -Syyuu --noconfirm \
     nextcloud-client \
     file-roller \
     vlc \
-    filezilla
+    filezilla \
+    dbeaver \
+    dbeaver-plugin-apache-poi \
+    dbeaver-plugin-batik \
+    dbeaver-plugin-office \
+    dbeaver-plugin-svg-format \
+    github-cli
 
 ### Node
 sudo pacman -Syyuu --noconfirm \
