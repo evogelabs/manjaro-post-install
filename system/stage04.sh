@@ -18,3 +18,9 @@ yay -Sua --noconfirm \
     jaspersoftstudio \
     vmware-workstation \
     vmware-unlocker-bin
+
+sudo systemctl start vmware-networks
+sudo systemctl enable vmware-networks
+
+sudo systemctl start vmware-usbarbitrator
+sudo systemctl enable vmware-usbarbitrator
